@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 115px;
+    height: 100vh;
+    padding: 0.9rem;
+    color: rgb(204, 201, 195);
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgb(37, 18, 123);
+}
+
+.sidebar:hover {
+    width: 240px;
+    transition: 0.5s;
+}
+
+li#logo {
+    width: 100px;
+    height: 100px;
+    list-style-type: none;
+}
+
+
+/*.logo {
+    height: 80%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}*/
+
+.menu li {
+    padding: item;
+    margin: 50px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: rgb(215, 201, 154);
+}
+
+.menu a {
+    color: #f0e9e9;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%
+}
+
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/*.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+}
+
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 88vw;
+    height: 10vh;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.container.header.nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container.header.nav.search input {
+    border: 1px;
+    border-color: black;
+    background: #331818;
+    padding: 10px;
+    width: 50%;
+}
+
+.container.header.nav.user {
+    flex: 1;
+    background: pink;
+}?*
